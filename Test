@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Oscar techblog</title><link href="/" rel="alternate"></link><link href="/Test" rel="self"></link><id>/</id><updated>2014-06-19T18:13:00+02:00</updated><entry><title>IPython Notebook on Amazon</title><link href="/notebookonremote.html" rel="alternate"></link><updated>2014-06-19T18:13:00+02:00</updated><author><name>Oscar Carlsson</name></author><id>tag:,2014-06-19:notebookonremote.html</id><summary type="html">&lt;p&gt;I mainly work in Python which has the wonderful tools IPython Notebook
+and IPython QT console, both supporting interactive python and inline
+matplotlib plots. Notebook has the benefit of cell execution and I use it
+when iteratively analysing a dataset and QT console when developing the 
+infrastructure to later on use in the analysis. This post will talk about the
+analysis in IPython Notebook.&lt;/p&gt;
+&lt;p&gt;Often when doing quick and dirty data analysis we're able to work locally on our laptops
+but sometimes that dataset is to large or the computation to heavy. Moving away from
+the normal tools and libraries that we're used to and work on distributed frameworks can be
+cumbersome. Luckily we can host a Notebook on a Amazon EC2 instance and leave the computation
+over night or use a offering with more RAM or CPU than we have locally.&lt;/p&gt;
+&lt;p&gt;When working on my master thesis I used one of the bigger offerings from Amazon with 70GB RAM and
+8 cores, allowing me to run multiple tests in parallel by different notebooks.
+&lt;/br&gt;
+&lt;center&gt;
+&lt;img src="../images/amazonperformance.png" alt="Amazon" style="width: 500px;" &gt;
+&lt;/center&gt;
+&lt;/br&gt;
+These steps are really simple. On the Amazon instance, start a IPython Notebook.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;ipython&lt;/span&gt; &lt;span class="n"&gt;notebook&lt;/span&gt; &lt;span class="n"&gt;port&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="mi"&gt;7777&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;On the local machine, set up a ssh-tunnel to the EC2 instance on that port.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;ssh&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;N&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;f&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;L&lt;/span&gt; &lt;span class="n"&gt;localhost&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="mi"&gt;7777&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="n"&gt;localhost&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="mi"&gt;7777&lt;/span&gt; &lt;span class="n"&gt;amazon&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;where amazon is defined in the ssh-config.
+Navigate to &lt;code&gt;http://localhost:7777&lt;/code&gt; and you will access the notebook running on the EC2 instance.&lt;/p&gt;
+&lt;h5&gt;tips&lt;/h5&gt;
+&lt;p&gt;To easy pass variables between notebooks use the predefined ipython commande, %store.&lt;/p&gt;
+&lt;p&gt;Save a variable:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="o"&gt;%&lt;/span&gt;&lt;span class="n"&gt;store&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="n"&gt;variable&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Retrieve a variable:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="o"&gt;%&lt;/span&gt;&lt;span class="n"&gt;store&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;r&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="n"&gt;variable&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;and to see what variables are currently set, use&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;whos&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;There are a couple of things not working properly in Notebook. One of which is that when
+closing the connection from the browser, the output of a running execution gets lost. This is 
+already reported as a bug and apparently hard to fix with the current codebase.
+The solutions is to store intermediate results in a file but this of course means messier code.&lt;/p&gt;</summary><category term="python"></category><category term="notebook"></category><category term="amazon"></category><category term="thesis"></category></entry></feed>
