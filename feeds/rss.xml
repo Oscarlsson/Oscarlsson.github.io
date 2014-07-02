@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Oscar techblog</title><link>http://oscarlsson.se/</link><description></description><atom:link href="http://oscarlsson.se/feeds/rss.xml" rel="self"></atom:link><lastBuildDate>Wed, 02 Jul 2014 10:00:00 +0200</lastBuildDate><item><title>ia32libs on 64-bit Debian Wheezy</title><link>http://oscarlsson.se/ia32libs.html</link><description>&lt;p&gt;Tried to install a VPN earlier, Forticlient SSL VPN, on my 64-bit Debian wheezy but it turned out to only exist a 32 bit version.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="c"&gt;# My system:&lt;/span&gt;
+&lt;span class="nv"&gt;$ &lt;/span&gt;uname -a
+&lt;span class="nv"&gt;$ &lt;/span&gt;Linux lad-laptop 3.2.0-4-amd64 &lt;span class="c"&gt;#1 SMP Debian 3.2.57-3+deb7u2 x86_64 GNU/Linux&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;After googling for solutions the standard reply was to install a library which would make 32-bit programs just work: &lt;code&gt;ia32-libs-gtk&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;So i tried this, with no luck:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The following packages have unmet dependencies: &lt;br&gt; ia32-libs : Depends: ia32-libs-i386 but it is not installable &lt;br&gt; E: Unable to correct problems, you have held broken packages.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;So I found a couple of guides but everyone differed in something. I will now retell what worked for me.
+First I had to tell the package management, dpkg, that I wanted &lt;code&gt;i386&lt;/code&gt; libraries (32bit)&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;dpkg --add-architecture i386
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;then change the lines in &lt;code&gt;/etc/apt/source.list&lt;/code&gt; to look like following&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="k"&gt;deb&lt;/span&gt; &lt;span class="sx"&gt;[arch=amd64,i386]&lt;/span&gt; &lt;span class="kp"&gt;http://ftp.se.debian.org/debian/&lt;/span&gt; &lt;span class="kp"&gt;wheezy&lt;/span&gt; &lt;span class="kp"&gt;main&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;And then update the system with&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;sudo apt-get update ; sudo apt-get dist-upgrade 
+&lt;span class="nv"&gt;$ &lt;/span&gt;sudo apt-get install ; sudo apt-get dist-upgrade
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;and then I was able to install the ia32-lib and get Forticlient working.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;sudo apt-get install ia32-libs-gtk &lt;span class="o"&gt;&amp;amp;&amp;amp;&lt;/span&gt; sudo apt-get install libgtk2.0-0:i386
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Note: I have still not gotten any errors by allowing i386 libs on my system but I will update this post if anything bad happens.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Oscar Carlsson</dc:creator><pubDate>Wed, 02 Jul 2014 10:00:00 +0200</pubDate><guid>tag:oscarlsson.se,2014-07-02:ia32libs.html</guid><category>Debian</category><category>Notetoself</category><category>Unix</category></item><item><title>IPython Notebook on Amazon</title><link>http://oscarlsson.se/notebookonremote.html</link><description>&lt;p&gt;I mainly work in Python which has the wonderful tools IPython Notebook
+and IPython QT console, both supporting interactive python and inline
+matplotlib plots. Notebook has the benefit of cell execution and I use it
+when iteratively analysing a dataset and QT console when developing the 
+infrastructure to later on use in the analysis. This post will talk about the
+analysis in IPython Notebook.&lt;/p&gt;
+&lt;p&gt;Often when doing quick and dirty data analysis we're able to work locally on our laptops
+but sometimes that dataset is to large or the computation to heavy. Moving away from
+the normal tools and libraries that we're used to and work on distributed frameworks can be
+cumbersome. Luckily we can host a Notebook on a Amazon EC2 instance and leave the computation
+over night or use a offering with more RAM or CPU than we have locally.&lt;/p&gt;
+&lt;p&gt;When working on my master thesis I used one of the bigger offerings from Amazon with 70GB RAM and
+8 cores, allowing me to run multiple tests in parallel by different notebooks.
+&lt;/br&gt;
+&lt;center&gt;
+&lt;img src="../images/amazonperformance.png" alt="Amazon" style="width: 500px;" &gt;
+&lt;/center&gt;
+&lt;/br&gt;
+These steps are really simple. On the Amazon instance, start a IPython Notebook.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;ipython&lt;/span&gt; &lt;span class="n"&gt;notebook&lt;/span&gt; &lt;span class="n"&gt;port&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="mi"&gt;7777&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;On the local machine, set up a ssh-tunnel to the EC2 instance on that port.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;ssh&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;N&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;f&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;L&lt;/span&gt; &lt;span class="n"&gt;localhost&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="mi"&gt;7777&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="n"&gt;localhost&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="mi"&gt;7777&lt;/span&gt; &lt;span class="n"&gt;amazon&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;where amazon is defined in the ssh-config.
+Navigate to &lt;code&gt;http://localhost:7777&lt;/code&gt; and you will access the notebook running on the EC2 instance.&lt;/p&gt;
+&lt;h5&gt;tips&lt;/h5&gt;
+&lt;p&gt;To easy pass variables between notebooks use the predefined ipython commande, %store.&lt;/p&gt;
+&lt;p&gt;Save a variable:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="o"&gt;%&lt;/span&gt;&lt;span class="n"&gt;store&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="n"&gt;variable&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Retrieve a variable:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="o"&gt;%&lt;/span&gt;&lt;span class="n"&gt;store&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;r&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="n"&gt;variable&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;and to see what variables are currently set, use&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;whos&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;There are a couple of things not working properly in Notebook. One of which is that when
+closing the connection from the browser, the output of a running execution gets lost. This is 
+already reported as a bug and apparently hard to fix with the current codebase.
+The solutions is to store intermediate results in a file but this of course means messier code.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Oscar Carlsson</dc:creator><pubDate>Thu, 19 Jun 2014 18:13:00 +0200</pubDate><guid>tag:oscarlsson.se,2014-06-19:notebookonremote.html</guid><category>python</category><category>notebook</category><category>amazon</category><category>thesis</category></item></channel></rss>

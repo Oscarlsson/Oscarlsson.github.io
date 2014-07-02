@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-        <title>Oscar techblog - amazon</title>
+        <title>Oscar techblog - Debian</title>
         <meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="shortcut icon" href="http://launchyard.com/images/favicon.png"/>
@@ -66,72 +66,56 @@
             <aside id="featured">
                 <div class="body">
                     <article>
-                        <h1 class="entry-title"><a href="http://oscarlsson.se/notebookonremote.html">IPython Notebook on Amazon</a></h1>
+                        <h1 class="entry-title"><a href="http://oscarlsson.se/ia32libs.html">ia32libs on 64-bit Debian Wheezy</a></h1>
 <div class="post-info">
 	<ul>
         <li class="vcard author">
                  by&nbsp;<a class="url fn" href="http://oscarlsson.se/author/oscar-carlsson.html">Oscar Carlsson</a>
         </li>
-        <li class="published" title="2014-06-19T18:13:00">
-          on&nbsp;Thu 19 June 2014
+        <li class="published" title="2014-07-02T10:00:00">
+          on&nbsp;Wed 02 July 2014
         </li>
 
 	</ul>
-<p>Category: <a href="http://oscarlsson.se/tag/python.html">python</a> <a href="http://oscarlsson.se/tag/notebook.html">notebook</a> <a href="http://oscarlsson.se/tag/amazon.html">amazon</a> <a href="http://oscarlsson.se/tag/thesis.html">thesis</a> </p>
-</div><!-- /.post-info --><p>I mainly work in Python which has the wonderful tools IPython Notebook
-and IPython QT console, both supporting interactive python and inline
-matplotlib plots. Notebook has the benefit of cell execution and I use it
-when iteratively analysing a dataset and QT console when developing the 
-infrastructure to later on use in the analysis. This post will talk about the
-analysis in IPython Notebook.</p>
-<p>Often when doing quick and dirty data analysis we're able to work locally on our laptops
-but sometimes that dataset is to large or the computation to heavy. Moving away from
-the normal tools and libraries that we're used to and work on distributed frameworks can be
-cumbersome. Luckily we can host a Notebook on a Amazon EC2 instance and leave the computation
-over night or use a offering with more RAM or CPU than we have locally.</p>
-<p>When working on my master thesis I used one of the bigger offerings from Amazon with 70GB RAM and
-8 cores, allowing me to run multiple tests in parallel by different notebooks.
-</br>
-<center>
-<img src="../images/amazonperformance.png" alt="Amazon" style="width: 500px;" >
-</center>
-</br>
-These steps are really simple. On the Amazon instance, start a IPython Notebook.</p>
-<div class="highlight"><pre><span class="n">ipython</span> <span class="n">notebook</span> <span class="n">port</span><span class="o">=</span><span class="mi">7777</span>
+<p>Category: <a href="http://oscarlsson.se/tag/debian.html">Debian</a> <a href="http://oscarlsson.se/tag/notetoself.html">Notetoself</a> <a href="http://oscarlsson.se/tag/unix.html">Unix</a> </p>
+</div><!-- /.post-info --><p>Tried to install a VPN earlier, Forticlient SSL VPN, on my 64-bit Debian wheezy but it turned out to only exist a 32 bit version.</p>
+<div class="highlight"><pre><span class="c"># My system:</span>
+<span class="nv">$ </span>uname -a
+<span class="nv">$ </span>Linux lad-laptop 3.2.0-4-amd64 <span class="c">#1 SMP Debian 3.2.57-3+deb7u2 x86_64 GNU/Linux</span>
 </pre></div>
 
 
-<p>On the local machine, set up a ssh-tunnel to the EC2 instance on that port.</p>
-<div class="highlight"><pre><span class="n">ssh</span> <span class="o">-</span><span class="n">N</span> <span class="o">-</span><span class="n">f</span> <span class="o">-</span><span class="n">L</span> <span class="n">localhost</span><span class="p">:</span><span class="mi">7777</span><span class="p">:</span><span class="n">localhost</span><span class="p">:</span><span class="mi">7777</span> <span class="n">amazon</span>
+<p>After googling for solutions the standard reply was to install a library which would make 32-bit programs just work: <code>ia32-libs-gtk</code>.</p>
+<p>So i tried this, with no luck:</p>
+<blockquote>
+<p>The following packages have unmet dependencies: <br> ia32-libs : Depends: ia32-libs-i386 but it is not installable <br> E: Unable to correct problems, you have held broken packages.</p>
+</blockquote>
+<p>So I found a couple of guides but everyone differed in something. I will now retell what worked for me.
+First I had to tell the package management, dpkg, that I wanted <code>i386</code> libraries (32bit)</p>
+<div class="highlight"><pre><span class="nv">$ </span>dpkg --add-architecture i386
 </pre></div>
 
 
-<p>where amazon is defined in the ssh-config.
-Navigate to <code>http://localhost:7777</code> and you will access the notebook running on the EC2 instance.</p>
-<h5>tips</h5>
-<p>To easy pass variables between notebooks use the predefined ipython commande, %store.</p>
-<p>Save a variable:</p>
-<div class="highlight"><pre><span class="o">%</span><span class="n">store</span> <span class="o">&lt;</span><span class="n">variable</span><span class="o">&gt;</span>
+<p>then change the lines in <code>/etc/apt/source.list</code> to look like following</p>
+<div class="highlight"><pre><span class="k">deb</span> <span class="sx">[arch=amd64,i386]</span> <span class="kp">http://ftp.se.debian.org/debian/</span> <span class="kp">wheezy</span> <span class="kp">main</span>
 </pre></div>
 
 
-<p>Retrieve a variable:</p>
-<div class="highlight"><pre><span class="o">%</span><span class="n">store</span> <span class="o">-</span><span class="n">r</span> <span class="o">&lt;</span><span class="n">variable</span><span class="o">&gt;</span>
+<p>And then update the system with</p>
+<div class="highlight"><pre><span class="nv">$ </span>sudo apt-get update ; sudo apt-get dist-upgrade 
+<span class="nv">$ </span>sudo apt-get install ; sudo apt-get dist-upgrade
 </pre></div>
 
 
-<p>and to see what variables are currently set, use</p>
-<div class="highlight"><pre><span class="n">whos</span>
+<p>and then I was able to install the ia32-lib and get Forticlient working.</p>
+<div class="highlight"><pre><span class="nv">$ </span>sudo apt-get install ia32-libs-gtk <span class="o">&amp;&amp;</span> sudo apt-get install libgtk2.0-0:i386
 </pre></div>
 
 
-<p>There are a couple of things not working properly in Notebook. One of which is that when
-closing the connection from the browser, the output of a running execution gets lost. This is 
-already reported as a bug and apparently hard to fix with the current codebase.
-The solutions is to store intermediate results in a file but this of course means messier code.</p>
+<p>Note: I have still not gotten any errors by allowing i386 libs on my system but I will update this post if anything bad happens.</p>
                     </article>
-                    <a href="http://oscarlsson.se/notebookonremote.html" rel="bookmark" 
-                       title="Permalink to IPython Notebook on Amazon">comment</a>
+                    <a href="http://oscarlsson.se/ia32libs.html" rel="bookmark" 
+                       title="Permalink to ia32libs on 64-bit Debian Wheezy">comment</a>
                 </div>
 
             </aside><!-- /#featured -->

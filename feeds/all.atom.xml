@@ -1,5 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Oscar techblog</title><link href="/" rel="alternate"></link><link href="/Test" rel="self"></link><id>/</id><updated>2014-06-19T18:13:00+02:00</updated><entry><title>IPython Notebook on Amazon</title><link href="/notebookonremote.html" rel="alternate"></link><updated>2014-06-19T18:13:00+02:00</updated><author><name>Oscar Carlsson</name></author><id>tag:,2014-06-19:notebookonremote.html</id><summary type="html">&lt;p&gt;I mainly work in Python which has the wonderful tools IPython Notebook
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Oscar techblog</title><link href="http://oscarlsson.se/" rel="alternate"></link><link href="http://oscarlsson.se/feeds/all.atom.xml" rel="self"></link><id>http://oscarlsson.se/</id><updated>2014-07-02T10:00:00+02:00</updated><entry><title>ia32libs on 64-bit Debian Wheezy</title><link href="http://oscarlsson.se/ia32libs.html" rel="alternate"></link><updated>2014-07-02T10:00:00+02:00</updated><author><name>Oscar Carlsson</name></author><id>tag:oscarlsson.se,2014-07-02:ia32libs.html</id><summary type="html">&lt;p&gt;Tried to install a VPN earlier, Forticlient SSL VPN, on my 64-bit Debian wheezy but it turned out to only exist a 32 bit version.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="c"&gt;# My system:&lt;/span&gt;
+&lt;span class="nv"&gt;$ &lt;/span&gt;uname -a
+&lt;span class="nv"&gt;$ &lt;/span&gt;Linux lad-laptop 3.2.0-4-amd64 &lt;span class="c"&gt;#1 SMP Debian 3.2.57-3+deb7u2 x86_64 GNU/Linux&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;After googling for solutions the standard reply was to install a library which would make 32-bit programs just work: &lt;code&gt;ia32-libs-gtk&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;So i tried this, with no luck:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The following packages have unmet dependencies: &lt;br&gt; ia32-libs : Depends: ia32-libs-i386 but it is not installable &lt;br&gt; E: Unable to correct problems, you have held broken packages.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;So I found a couple of guides but everyone differed in something. I will now retell what worked for me.
+First I had to tell the package management, dpkg, that I wanted &lt;code&gt;i386&lt;/code&gt; libraries (32bit)&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;dpkg --add-architecture i386
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;then change the lines in &lt;code&gt;/etc/apt/source.list&lt;/code&gt; to look like following&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="k"&gt;deb&lt;/span&gt; &lt;span class="sx"&gt;[arch=amd64,i386]&lt;/span&gt; &lt;span class="kp"&gt;http://ftp.se.debian.org/debian/&lt;/span&gt; &lt;span class="kp"&gt;wheezy&lt;/span&gt; &lt;span class="kp"&gt;main&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;And then update the system with&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;sudo apt-get update ; sudo apt-get dist-upgrade 
+&lt;span class="nv"&gt;$ &lt;/span&gt;sudo apt-get install ; sudo apt-get dist-upgrade
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;and then I was able to install the ia32-lib and get Forticlient working.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;sudo apt-get install ia32-libs-gtk &lt;span class="o"&gt;&amp;amp;&amp;amp;&lt;/span&gt; sudo apt-get install libgtk2.0-0:i386
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Note: I have still not gotten any errors by allowing i386 libs on my system but I will update this post if anything bad happens.&lt;/p&gt;</summary><category term="Debian"></category><category term="Notetoself"></category><category term="Unix"></category></entry><entry><title>IPython Notebook on Amazon</title><link href="http://oscarlsson.se/notebookonremote.html" rel="alternate"></link><updated>2014-06-19T18:13:00+02:00</updated><author><name>Oscar Carlsson</name></author><id>tag:oscarlsson.se,2014-06-19:notebookonremote.html</id><summary type="html">&lt;p&gt;I mainly work in Python which has the wonderful tools IPython Notebook
 and IPython QT console, both supporting interactive python and inline
 matplotlib plots. Notebook has the benefit of cell execution and I use it
 when iteratively analysing a dataset and QT console when developing the 
