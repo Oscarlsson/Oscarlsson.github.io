@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-        <title>IPython Notebook on Amazon</title>
+        <title>Understanding data processing</title>
         <meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="shortcut icon" href="http://oscarlsson.se/images/favicon.png"/>
@@ -63,8 +63,8 @@
       <article>
         <header>
           <h1 class="entry-title">
-            <a href="http://oscarlsson.se/notebookonremote.html" rel="bookmark"
-               title="Permalink to IPython Notebook on Amazon">IPython Notebook on Amazon</a></h1>
+            <a href="http://oscarlsson.se/drafts/dataprocess.html" rel="bookmark"
+               title="Permalink to Understanding data processing">Understanding data processing</a></h1>
 
         </header>
 
@@ -74,70 +74,20 @@
         <li class="vcard author">
                  by&nbsp;<a class="url fn" href="http://oscarlsson.se/author/oscar-carlsson.html">Oscar Carlsson</a>
         </li>
-        <li class="published" title="2014-06-19T18:13:00+02:00">
-          on&nbsp;Thu 19 June 2014
+        <li class="published" title="2014-08-26T18:28:00+02:00">
+          on&nbsp;Tue 26 August 2014
         </li>
 
 	</ul>
-<p>Category: <a href="http://oscarlsson.se/tag/python.html">python</a> <a href="http://oscarlsson.se/tag/notebook.html">notebook</a> <a href="http://oscarlsson.se/tag/amazon.html">amazon</a> <a href="http://oscarlsson.se/tag/thesis.html">thesis</a> </p>
-</div><!-- /.post-info -->          <p>I mainly work in Python which has the wonderful tools IPython Notebook
-and IPython QT console, both supporting interactive python and inline
-matplotlib plots. Notebook has the benefit of cell execution and I use it
-when iteratively analysing a dataset and QT console when developing the 
-infrastructure to later on use in the analysis. This post will talk about the
-analysis in IPython Notebook.</p>
-<p>Often when doing quick and dirty data analysis we're able to work locally on our laptops
-but sometimes that dataset is to large or the computation to heavy. Moving away from
-the normal tools and libraries that we're used to and work on distributed frameworks can be
-cumbersome. Luckily we can host a Notebook on a Amazon EC2 instance and leave the computation
-over night or use a offering with more RAM or CPU than we have locally.</p>
-<p>When working on my master thesis I used one of the bigger offerings from Amazon with 70GB RAM and
-8 cores, allowing me to run multiple tests in parallel by different notebooks.
-</br>
-<center>
-<img src="../images/amazonperformance.png" alt="Amazon" style="width: 500px;" >
-</center>
-</br>
-These steps are really simple. On the Amazon instance, start a IPython Notebook.</p>
-<div class="highlight"><pre><span class="n">ipython</span> <span class="n">notebook</span> <span class="n">port</span><span class="o">=</span><span class="mi">7777</span>
-</pre></div>
-
-
-<p>On the local machine, set up a ssh-tunnel to the EC2 instance on that port.</p>
-<div class="highlight"><pre><span class="n">ssh</span> <span class="o">-</span><span class="n">N</span> <span class="o">-</span><span class="n">f</span> <span class="o">-</span><span class="n">L</span> <span class="n">localhost</span><span class="p">:</span><span class="mi">7777</span><span class="p">:</span><span class="n">localhost</span><span class="p">:</span><span class="mi">7777</span> <span class="n">amazon</span>
-</pre></div>
-
-
-<p>where amazon is defined in the ssh-config.
-Navigate to <code>http://localhost:7777</code> and you will access the notebook running on the EC2 instance.</p>
-<h5>tips</h5>
-<p>To easy pass variables between notebooks use the predefined ipython commande, %store.</p>
-<p>Save a variable:</p>
-<div class="highlight"><pre><span class="o">%</span><span class="n">store</span> <span class="o">&lt;</span><span class="n">variable</span><span class="o">&gt;</span>
-</pre></div>
-
-
-<p>Retrieve a variable:</p>
-<div class="highlight"><pre><span class="o">%</span><span class="n">store</span> <span class="o">-</span><span class="n">r</span> <span class="o">&lt;</span><span class="n">variable</span><span class="o">&gt;</span>
-</pre></div>
-
-
-<p>and to see what variables are currently set, use</p>
-<div class="highlight"><pre><span class="n">whos</span>
-</pre></div>
-
-
-<p>There are a couple of things not working properly in Notebook. One of which is that when
-closing the connection from the browser, the output of a running execution gets lost. This is 
-already reported as a bug and apparently hard to fix with the current codebase.
-The solutions is to store intermediate results in a file but this of course means messier code.</p>
+<p>Category: <a href="http://oscarlsson.se/tag/data.html">data</a> <a href="http://oscarlsson.se/tag/hadoop.html">hadoop</a> <a href="http://oscarlsson.se/tag/.html"></a> </p>
+</div><!-- /.post-info -->          <p>blah blah</p>
         </div><!-- /.entry-content -->
 <a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="oscarlsson">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script><br/><br/>
         <div class="comments">
 
           <div id="disqus_thread"></div>
           <script type="text/javascript">
-            var disqus_identifier = "notebookonremote.html";
+            var disqus_identifier = "drafts/dataprocess.html";
             (function() {
             var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
             dsq.src = 'http://oscarstechblog.disqus.com/embed.js';

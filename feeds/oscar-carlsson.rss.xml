@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Oscar techblog</title><link>http://oscarlsson.se/</link><description></description><atom:link href="http://oscarlsson.se/feeds/rss.xml" rel="self"></atom:link><lastBuildDate>Thu, 22 Jan 2015 16:51:00 +0100</lastBuildDate><item><title>Who is doing Machine Learning in Gothenburg?</title><link>http://oscarlsson.se/machinelearninggothenburg.html</link><description>&lt;p&gt;As a master student majoring in Machine Learning I've tried to research what
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Oscar techblog</title><link>http://oscarlsson.se/</link><description></description><atom:link href="http://oscarlsson.se/feeds/oscar-carlsson.rss.xml" rel="self"></atom:link><lastBuildDate>Thu, 22 Jan 2015 16:51:00 +0100</lastBuildDate><item><title>Who is doing Machine Learning in Gothenburg?</title><link>http://oscarlsson.se/machinelearninggothenburg.html</link><description>&lt;p&gt;As a master student majoring in Machine Learning I've tried to research what
 companies and institutions in Gothenburg that is involved in Machine Learning/Big data/Data analysis. I was
 looking for future work place and trying to understand how the community in GBG worked.&lt;/p&gt;
 &lt;p&gt;I thought I would share what I've found.
