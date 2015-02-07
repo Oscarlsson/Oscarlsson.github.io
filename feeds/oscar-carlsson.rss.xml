@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Oscar techblog</title><link>http://oscarlsson.se/</link><description></description><atom:link href="http://oscarlsson.se/feeds/oscar-carlsson.rss.xml" rel="self"></atom:link><lastBuildDate>Sat, 07 Feb 2015 10:18:00 +0100</lastBuildDate><item><title>Introduction to Clustering @ Machine Learning meetup</title><link>http://oscarlsson.se/clustering-meetup-talk.html</link><description>&lt;p&gt;I gave a &lt;em&gt;introduction to clustering&lt;/em&gt; at the Machine Learning meetup-group here in Gothenburg with 35 Machine Learning-enthusiasts, in a wide range of ML-experience, participating.&lt;/p&gt;
+&lt;p&gt;We, Spotify, hosted the meetup at our Gothenburg office and I gave two presentations on roughly 30 minutes each. The first one was a theoretical introduction to clustering and feature engineering.
+The purpose of the presentation was to first build an intuition of what clustering is (and what it isn't) by pedagogically explaining the steps from getting the data to the output of the algorithm.&lt;/p&gt;
+&lt;p&gt;And, as I'm really excited about the Machine Learning-community in Python I demoed some data mining in Python. Showing of the use-everyday-libraries such as Numpy, Pandas and Scikit-learn and tie it together with the theoretical methods I had already explained. The clustering examples I did were on Music Lyric data scraped from a lyrics Wikipedia. I showed how we easily could pre-process (clean / vectorize) the data and then plug it into our clustering algorithms. As problem of clustering is unsupervised hence hard to evaluate I (think) managed to show a typical work flow when doing Machine Learning on real-world data. There were tons of obvious preprocessing steps I skipped, but I did so to not add to much to the presentation but to make it easy to follow.&lt;/p&gt;
+&lt;p&gt;And I must say that I enjoyed talking to all of you attending the event both in the break and afterwards. I noticed that most participated to meet and discuss Machine Learning with others and I'm glad we got the chance to do so.&lt;/p&gt;
+&lt;h2&gt;Material I references to in the talk:&lt;/h2&gt;
+&lt;p&gt;Latest on our Rec Sys : 
+&lt;a href="http://www.a1k0n.net/spotify/ml-madison/"&gt;http://www.a1k0n.net/spotify/ml-madison/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Deep Learning at Spotify: 
+&lt;a href="http://benanne.github.io/2014/08/05/spotify-cnns.html"&gt;http://benanne.github.io/2014/08/05/spotify-cnns.html&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;My presentation:&lt;/h2&gt;
+&lt;p&gt;&lt;a href="/theoretical.slides.html"&gt;Presentation 1: Theoretical introduction to Clustering and feature engineering&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="/python_demo.slides.html"&gt;Presentation/demo 2: Introduction to data (mining) analysis in Python&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Note that the last part, after mentioning iPython, was demoed live in the notebook. Get the notebook at
+&lt;a href="https://github.com/Oscarlsson/meetup-clustering-presentation"&gt;Github repot&lt;/a&gt;
+and try it yourself.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Oscar Carlsson</dc:creator><pubDate>Sat, 07 Feb 2015 10:18:00 +0100</pubDate><guid>tag:oscarlsson.se,2015-02-07:clustering-meetup-talk.html</guid><category>MachineLearning</category><category>Python</category><category>Scikit-learn</category><category>Clustering</category><category>FeatureEngineering</category></item><item><title>Who is doing Machine Learning in Gothenburg?</title><link>http://oscarlsson.se/machinelearninggothenburg.html</link><description>&lt;p&gt;As a master student majoring in Machine Learning I've tried to research what
+companies and institutions in Gothenburg that is involved in Machine Learning/Big data/Data analysis. I was
+looking for future work place and trying to understand how the community in GBG worked.&lt;/p&gt;
+&lt;p&gt;I thought I would share what I've found.
+This list is probably not complete and I would love to add information about your company or 
+research group as well as update or change the information given below.
+The Machine Learning community in Gothenburg is not big which partly motivates this summary. &lt;/p&gt;
+&lt;h1&gt;The community&lt;/h1&gt;
+&lt;p&gt;Recently, &lt;a href="http://karinabunyik.com"&gt;Karina Bunyik&lt;/a&gt;, started a meetup group for Machine Learning Gothenburg &lt;a href="http://www.meetup.com/Goteborg-Machine-Learning-Meetup/"&gt;found here&lt;/a&gt; that I'm now co-organizing.
+There will be seminars introducing the basics of Machine Learning and hopefully presentations from the industry on applications.&lt;/p&gt;
+&lt;p&gt;Sadly, that it is besides what Chalmers offers. The ML group at the Computer Science department is called LAB and announces seminars on this &lt;a href="http://www.cse.chalmers.se/research/lab/seminars.php"&gt;link&lt;/a&gt;. I find
+it useful to skim once a month or so.
+Not to long ago LAB helped arrange a &lt;a href="http://www.cse.chalmers.se/research/lab/seminars.php?sid=25"&gt;Seminar on Big Data&lt;/a&gt; at Chalmers indicating that the community is growing.&lt;/p&gt;
+&lt;h1&gt;Chalmers&lt;/h1&gt;
+&lt;p&gt;Chalmers offers a couple of interesting courses. Nothing in data mining but some in statistics and theoretical ML.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://www.cse.chalmers.se/research/lab/courses.php?coid=9"&gt;Algortihms for Machine Learning&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://physics.gu.se/~frtbm/joomla/index.php?option=com_content&amp;amp;view=article&amp;amp;id=99&amp;amp;catid=79&amp;amp;Itemid=290A"&gt;Neural Networks&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.math.chalmers.se/Stat/Grundutb/GU/MSA100/A13/"&gt;Computer Intensive Statistical Methods&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.cse.chalmers.se/edu/year/2013/course/TIN171/"&gt;Artificial Intelligence&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.cse.chalmers.se/research/lab/courses.php?coid=8"&gt;OLD: Decision Making Under uncertainty&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.cse.chalmers.se/research/lab/courses.php?coid=4"&gt;OLD: Boosting&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;Industry&lt;/h1&gt;
+&lt;h3&gt;Recorded Future&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Recorded Future are a startup company headquartered in Cambridge, MA with offices in Arlington, VA and Gothenburg, Sweden. Their team includes computer scientists, statisticians, linguists, and technical business people with deep expertise in areas such as intelligence and security. They`re committed to organizing the web in a radically new and useful way.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;I have heard, and seen job ads, indicating them looking for Data Scientists and Machine Learning engineers. Their dataset contains billions of texts and the tool they are developing is a way to analyze it.&lt;/p&gt;
+&lt;p&gt;I know they have had collaborations with Chalmers LAB group in exchanging data.&lt;/p&gt;
+&lt;p&gt;Jobs here: &lt;a href="https://www.recordedfuture.com/jobs/"&gt;RF&lt;/a&gt;&lt;/p&gt;
+&lt;h3&gt;Findwise&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Findwise uses search technology to increase your data quality. Our motto is "right information, to the right person, at the right time".  We have had over 300 successful project in different industries and areas:&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Also, as Recorded Future they have had collaborations with Chalmers LAB group.&lt;/p&gt;
+&lt;p&gt;On their website they announce that they are looking for thesis students in Machine Learning &lt;a href="http://career.findwise.com/jobs/2110-thesis"&gt;here&lt;/a&gt;. I recall one thesis-description including experimenting with word2vec.&lt;/p&gt;
+&lt;h3&gt;Burt&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Burt provides intelligence and analytics to digital publishers, 
+turning big data into insight, action and revenue. Our platform is built to support digital media owners, rather than online marketing 
+and e-commerce. We combine detailed media measurement, powerful big data capabilities and beautiful data visualizations.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Compared to the two previous companies Burt is a pure startup in company culture. It is hard to understand how they are using Machine Learning but they seem to be running A/B-tests and use some type of large NoSQL-database for their 700TB data. That indicates to me that they are one of few interesting companies to mention in a summary as this.&lt;/p&gt;
+&lt;p&gt;An old thesis of a evaluation of storage of large data can be found &lt;a href="http://publications.lib.chalmers.se/records/fulltext/123839.pdf"&gt;here&lt;/a&gt; and 2014 this thesis was announced &lt;a href="https://farmchalmers.files.wordpress.com/2014/02/thesis_work_original_a4.pdf"&gt;link&lt;/a&gt;&lt;/p&gt;
+&lt;h3&gt;Tajitsu&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Tajitsu is a predictive customer analytics platform for progressive marketing teams. We help companies find high-value customers, and keep them coming back. Tajitsu turns data into results!&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Tajitsu is focusing on helping Casino-companies understand their data. Meaning that they build Machine Learning-models they selll business-to-business.
+No job advertisements out but they are looking for Machine Learning engineers.&lt;/p&gt;
+&lt;h3&gt;Aitellu&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Aitellu delivers Insight Analytics of Big data to give you information detecting anomalies and nascent trends, helping you to act on the things that make a difference.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Heavily connected with Tajitsu as the people behind Tajitsu left Aitellu to start their own business. One of the algortihms used at  Aitellu is a so called evolutionary algortihm.
+As for jobs: they where looking for &lt;a href="http://www.wannaremote.com/utvecklare-at-aitellu-technologies-ab-gothenburg-sweden-allows-remote/"&gt;python-developer with knowledge in AI&lt;/a&gt;&lt;/p&gt;
+&lt;h3&gt;Spotify&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Music streaming service&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Spotify do have an office in Gothenburg, but no team focusing on Machine Learning. The recommender system-team is located in NYC and former EchoNest in Boston. However, I'm working as a Data Engineer (in Gothenburg) doing data analysis on our large dataset from a performance perspective.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Oscar Carlsson</dc:creator><pubDate>Thu, 22 Jan 2015 16:51:00 +0100</pubDate><guid>tag:oscarlsson.se,2015-01-22:machinelearninggothenburg.html</guid><category>MachineLearning</category><category>Gothenburg</category><category>Chalmers</category><category>DataMining</category></item><item><title>ia32libs on 64-bit Debian Wheezy</title><link>http://oscarlsson.se/ia32libs.html</link><description>&lt;p&gt;Tried to install a VPN earlier, Forticlient SSL VPN, on my 64-bit Debian wheezy but it turned out to only exist a 32 bit version.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="c"&gt;# My system:&lt;/span&gt;
+&lt;span class="nv"&gt;$ &lt;/span&gt;uname -a
+&lt;span class="nv"&gt;$ &lt;/span&gt;Linux lad-laptop 3.2.0-4-amd64 &lt;span class="c"&gt;#1 SMP Debian 3.2.57-3+deb7u2 x86_64 GNU/Linux&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;After googling for solutions the standard reply was to install a library which would make 32-bit programs just work: &lt;code&gt;ia32-libs-gtk&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;So i tried this, with no luck:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The following packages have unmet dependencies: &lt;br&gt; ia32-libs : Depends: ia32-libs-i386 but it is not installable &lt;br&gt; E: Unable to correct problems, you have held broken packages.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;So I found a couple of guides but everyone differed in something. I will now retell what worked for me.
+First I had to tell the package management, dpkg, that I wanted &lt;code&gt;i386&lt;/code&gt; libraries (32bit)&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;dpkg --add-architecture i386
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;then change the lines in &lt;code&gt;/etc/apt/source.list&lt;/code&gt; to look like following&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="k"&gt;deb&lt;/span&gt; &lt;span class="sx"&gt;[arch=amd64,i386]&lt;/span&gt; &lt;span class="kp"&gt;http://ftp.se.debian.org/debian/&lt;/span&gt; &lt;span class="kp"&gt;wheezy&lt;/span&gt; &lt;span class="kp"&gt;main&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;And then update the system with&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;sudo apt-get update &lt;span class="p"&gt;;&lt;/span&gt; sudo apt-get dist-upgrade 
+&lt;span class="nv"&gt;$ &lt;/span&gt;sudo apt-get install &lt;span class="p"&gt;;&lt;/span&gt; sudo apt-get dist-upgrade
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;and then I was able to install the ia32-lib and get Forticlient working.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;sudo apt-get install ia32-libs-gtk &lt;span class="o"&gt;&amp;amp;&amp;amp;&lt;/span&gt; sudo apt-get install libgtk2.0-0:i386
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Note: I have still not gotten any errors by allowing i386 libs on my system but I will update this post if anything bad happens.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Oscar Carlsson</dc:creator><pubDate>Wed, 02 Jul 2014 10:00:00 +0200</pubDate><guid>tag:oscarlsson.se,2014-07-02:ia32libs.html</guid><category>Debian</category><category>Notetoself</category><category>Unix</category></item><item><title>IPython Notebook on Amazon</title><link>http://oscarlsson.se/notebookonremote.html</link><description>&lt;p&gt;I mainly work in Python which has the wonderful tools IPython Notebook
+and IPython QT console, both supporting interactive python and inline
+matplotlib plots. Notebook has the benefit of cell execution and I use it
+when iteratively analysing a dataset and QT console when developing the 
+infrastructure to later on use in the analysis. This post will talk about the
+analysis in IPython Notebook.&lt;/p&gt;
+&lt;p&gt;Often when doing quick and dirty data analysis we're able to work locally on our laptops
+but sometimes that dataset is to large or the computation to heavy. Moving away from
+the normal tools and libraries that we're used to and work on distributed frameworks can be
+cumbersome. Luckily we can host a Notebook on a Amazon EC2 instance and leave the computation
+over night or use a offering with more RAM or CPU than we have locally.&lt;/p&gt;
+&lt;p&gt;When working on my master thesis I used one of the bigger offerings from Amazon with 70GB RAM and
+8 cores, allowing me to run multiple tests in parallel by different notebooks.
+&lt;/br&gt;
+&lt;center&gt;
+&lt;img src="../images/amazonperformance.png" alt="Amazon" style="width: 500px;" &gt;
+&lt;/center&gt;
+&lt;/br&gt;
+These steps are really simple. On the Amazon instance, start a IPython Notebook.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;ipython&lt;/span&gt; &lt;span class="n"&gt;notebook&lt;/span&gt; &lt;span class="n"&gt;port&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="mi"&gt;7777&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;On the local machine, set up a ssh-tunnel to the EC2 instance on that port.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;ssh&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;N&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;f&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;L&lt;/span&gt; &lt;span class="n"&gt;localhost&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="mi"&gt;7777&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="n"&gt;localhost&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="mi"&gt;7777&lt;/span&gt; &lt;span class="n"&gt;amazon&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;where amazon is defined in the ssh-config.
+Navigate to &lt;code&gt;http://localhost:7777&lt;/code&gt; and you will access the notebook running on the EC2 instance.&lt;/p&gt;
+&lt;h5&gt;tips&lt;/h5&gt;
+&lt;p&gt;To easy pass variables between notebooks use the predefined ipython commande, %store.&lt;/p&gt;
+&lt;p&gt;Save a variable:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="o"&gt;%&lt;/span&gt;&lt;span class="n"&gt;store&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="n"&gt;variable&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Retrieve a variable:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="o"&gt;%&lt;/span&gt;&lt;span class="n"&gt;store&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;r&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="n"&gt;variable&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;and to see what variables are currently set, use&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;whos&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;There are a couple of things not working properly in Notebook. One of which is that when
+closing the connection from the browser, the output of a running execution gets lost. This is 
+already reported as a bug and apparently hard to fix with the current codebase.
+The solutions is to store intermediate results in a file but this of course means messier code.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Oscar Carlsson</dc:creator><pubDate>Thu, 19 Jun 2014 18:13:00 +0200</pubDate><guid>tag:oscarlsson.se,2014-06-19:notebookonremote.html</guid><category>Python</category><category>iPythonNotebook</category><category>Amazon</category><category>Thesis</category></item></channel></rss>
