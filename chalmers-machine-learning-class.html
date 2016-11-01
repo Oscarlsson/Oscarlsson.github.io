@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-        <title>Oscar techblog - Notetoself</title>
+        <title>Machine Learning class at Chalmers</title>
         <meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="shortcut icon" href="http://oscarlsson.se/images/favicon.png"/>
@@ -54,68 +54,65 @@
         
     </section><!-- /#extras -->
 
-        
-        
+<section id="content" >
+    <div class="body">
+      <article>
+        <header>
+          <h1 class="entry-title">
+            <a href="http://oscarlsson.se/chalmers-machine-learning-class.html" rel="bookmark"
+               title="Permalink to Machine Learning class at Chalmers">Machine Learning class at Chalmers</a></h1>
 
-    
-            <aside id="featured">
-                <div class="body">
-                    <article>
-                        <h1 class="entry-title"><a href="http://oscarlsson.se/ia32libs.html">ia32libs on 64-bit Debian Wheezy</a></h1>
+        </header>
+
+        <div class="entry-content">
 <div class="post-info">
 	<ul>
         <li class="vcard author">
                  by&nbsp;<a class="url fn" href="http://oscarlsson.se/author/oscar-carlsson.html">Oscar Carlsson</a>
         </li>
-        <li class="published" title="2014-07-02T10:00:00+02:00">
-          on&nbsp;Wed 02 July 2014
+        <li class="published" title="2015-03-06T10:18:00+01:00">
+          on&nbsp;Fri 06 March 2015
         </li>
 
 	</ul>
-<p>Category: <a href="http://oscarlsson.se/tag/debian.html">Debian</a> <a href="http://oscarlsson.se/tag/notetoself.html">Notetoself</a> <a href="http://oscarlsson.se/tag/unix.html">Unix</a> </p>
-</div><!-- /.post-info --><p>Tried to install a VPN earlier, Forticlient SSL VPN, on my 64-bit Debian wheezy but it turned out to only exist a 32 bit version.</p>
-<div class="highlight"><pre><span></span><span class="c1"># My system:</span>
-$ uname -a
-$ Linux lad-laptop 3.2.0-4-amd64 <span class="c1">#1 SMP Debian 3.2.57-3+deb7u2 x86_64 GNU/Linux</span>
-</pre></div>
+<p>Category: <a href="http://oscarlsson.se/tag/publicspeaking.html">PublicSpeaking</a> <a href="http://oscarlsson.se/tag/machinelearning.html">MachineLearning</a> <a href="http://oscarlsson.se/tag/clustering.html">Clustering</a> </p>
+</div><!-- /.post-info -->          <p>I gave a 45 min presentation at the Machine Learning class at Chalmers
+titled "Big Data and Machine Learning @ Spotify". </p>
+<p>Just recently taking the course as a student I tried to connect the theoretical parts presented in
+the course with what the industry does and needs. As data processing and
+cleaning of data is a big part in industry but rightfully skipped in a ML
+class I mentioned that.</p>
+<p><a href="http://www.slideshare.net/OscarCarlsson1/big-data-and-machine-learning-spotify">Please have a look at the presentation on slideshare</a></p>
+<iframe src="//www.slideshare.net/slideshow/embed_code/key/Koa6MYPwY0tEu0"
+width="595" height="485" frameborder="0" marginwidth="0" marginheight="0"
+scrolling="no" style="border:1px solid #CCC; border-width:1px;
+margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
 
+<p><div
+style="margin-bottom:5px"> <strong> <a
+href="//www.slideshare.net/OscarCarlsson1/big-data-and-machine-learning-spotify"
+title="Big data and machine learning @ Spotify" target="_blank">Big data
+and machine learning @ Spotify</a> </strong> from <strong><a
+target="_blank" href="//www.slideshare.net/OscarCarlsson1">Oscar
+Carlsson</a></strong> </div> </p>
+        </div><!-- /.entry-content -->
+<a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="oscarlsson">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script><br/><br/>
+        <div class="comments">
 
-<p>After googling for solutions the standard reply was to install a library which would make 32-bit programs just work: <code>ia32-libs-gtk</code>.</p>
-<p>So i tried this, with no luck:</p>
-<blockquote>
-<p>The following packages have unmet dependencies: <br> ia32-libs : Depends: ia32-libs-i386 but it is not installable <br> E: Unable to correct problems, you have held broken packages.</p>
-</blockquote>
-<p>So I found a couple of guides but everyone differed in something. I will now retell what worked for me.
-First I had to tell the package management, dpkg, that I wanted <code>i386</code> libraries (32bit)</p>
-<div class="highlight"><pre><span></span>$ dpkg --add-architecture i386
-</pre></div>
+          <div id="disqus_thread"></div>
+          <script type="text/javascript">
+            var disqus_identifier = "chalmers-machine-learning-class.html";
+            (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = 'http://oscarstechblog.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+            })();
+          </script>
+        </div>
 
-
-<p>then change the lines in <code>/etc/apt/source.list</code> to look like following</p>
-<div class="highlight"><pre><span></span><span class="k">deb</span> <span class="sx">[arch=amd64,i386]</span> <span class="kp">http://ftp.se.debian.org/debian/</span> <span class="kp">wheezy</span> <span class="kp">main</span>
-</pre></div>
-
-
-<p>And then update the system with</p>
-<div class="highlight"><pre><span></span>$ sudo apt-get update <span class="p">;</span> sudo apt-get dist-upgrade 
-$ sudo apt-get install <span class="p">;</span> sudo apt-get dist-upgrade
-</pre></div>
-
-
-<p>and then I was able to install the ia32-lib and get Forticlient working.</p>
-<div class="highlight"><pre><span></span>$ sudo apt-get install ia32-libs-gtk <span class="o">&amp;&amp;</span> sudo apt-get install libgtk2.0-0:i386
-</pre></div>
-
-
-<p>Note: I have still not gotten any errors by allowing i386 libs on my system but I will update this post if anything bad happens.</p>
-                    </article>
-                    <a href="http://oscarlsson.se/ia32libs.html" rel="bookmark" 
-                       title="Permalink to ia32libs on 64-bit Debian Wheezy">comment</a>
-                </div>
-
-            </aside><!-- /#featured -->
-            
-        
+      </article>
+    </div>
+</section>
 	
         <footer id="contentinfo" >
                 <address id="about" class="vcard ">

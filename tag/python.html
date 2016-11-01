@@ -43,7 +43,6 @@
     
         </div>
    
-
         </br>
         <div class="social">
             <ul>
@@ -73,7 +72,7 @@
         </li>
 
 	</ul>
-<p>Category: <a href="http://oscarlsson.se/tag/machinelearning.html">MachineLearning</a> <a href="http://oscarlsson.se/tag/python.html">Python</a> <a href="http://oscarlsson.se/tag/scikit-learn.html">Scikit-learn</a> <a href="http://oscarlsson.se/tag/clustering.html">Clustering</a> <a href="http://oscarlsson.se/tag/featureengineering.html">FeatureEngineering</a> </p>
+<p>Category: <a href="http://oscarlsson.se/tag/publicspeaking.html">PublicSpeaking</a> <a href="http://oscarlsson.se/tag/machinelearning.html">MachineLearning</a> <a href="http://oscarlsson.se/tag/python.html">Python</a> <a href="http://oscarlsson.se/tag/scikit-learn.html">Scikit-learn</a> <a href="http://oscarlsson.se/tag/clustering.html">Clustering</a> <a href="http://oscarlsson.se/tag/featureengineering.html">FeatureEngineering</a> </p>
 </div><!-- /.post-info --><p>I gave a <em>introduction to clustering</em> at the Machine Learning meetup-group here in Gothenburg with 35 Machine Learning-enthusiasts, in a wide range of ML-experience, participating.</p>
 <p>We, Spotify, hosted the meetup at our Gothenburg office and I gave two presentations on roughly 30 minutes each. The first one was a theoretical introduction to clustering and feature engineering.
 The purpose of the presentation was to first build an intuition of what clustering is (and what it isn't) by pedagogically explaining the steps from getting the data to the output of the algorithm.</p>
@@ -135,12 +134,12 @@ over night or use a offering with more RAM or CPU than we have locally.</p>
 </center>
 </br>
 These steps are really simple. On the Amazon instance, start a IPython Notebook.</p>
-<div class="highlight"><pre><span class="n">ipython</span> <span class="n">notebook</span> <span class="n">port</span><span class="o">=</span><span class="mi">7777</span>
+<div class="highlight"><pre><span></span><span class="n">ipython</span> <span class="n">notebook</span> <span class="n">port</span><span class="o">=</span><span class="mi">7777</span>
 </pre></div>
 
 
 <p>On the local machine, set up a ssh-tunnel to the EC2 instance on that port.</p>
-<div class="highlight"><pre><span class="n">ssh</span> <span class="o">-</span><span class="n">N</span> <span class="o">-</span><span class="n">f</span> <span class="o">-</span><span class="n">L</span> <span class="n">localhost</span><span class="p">:</span><span class="mi">7777</span><span class="p">:</span><span class="n">localhost</span><span class="p">:</span><span class="mi">7777</span> <span class="n">amazon</span>
+<div class="highlight"><pre><span></span><span class="n">ssh</span> <span class="o">-</span><span class="n">N</span> <span class="o">-</span><span class="n">f</span> <span class="o">-</span><span class="n">L</span> <span class="n">localhost</span><span class="p">:</span><span class="mi">7777</span><span class="p">:</span><span class="n">localhost</span><span class="p">:</span><span class="mi">7777</span> <span class="n">amazon</span>
 </pre></div>
 
 
@@ -149,17 +148,17 @@ Navigate to <code>http://localhost:7777</code> and you will access the notebook 
 <h5>tips</h5>
 <p>To easy pass variables between notebooks use the predefined ipython commande, %store.</p>
 <p>Save a variable:</p>
-<div class="highlight"><pre><span class="o">%</span><span class="n">store</span> <span class="o">&lt;</span><span class="n">variable</span><span class="o">&gt;</span>
+<div class="highlight"><pre><span></span><span class="o">%</span><span class="n">store</span> <span class="o">&lt;</span><span class="n">variable</span><span class="o">&gt;</span>
 </pre></div>
 
 
 <p>Retrieve a variable:</p>
-<div class="highlight"><pre><span class="o">%</span><span class="n">store</span> <span class="o">-</span><span class="n">r</span> <span class="o">&lt;</span><span class="n">variable</span><span class="o">&gt;</span>
+<div class="highlight"><pre><span></span><span class="o">%</span><span class="n">store</span> <span class="o">-</span><span class="n">r</span> <span class="o">&lt;</span><span class="n">variable</span><span class="o">&gt;</span>
 </pre></div>
 
 
 <p>and to see what variables are currently set, use</p>
-<div class="highlight"><pre><span class="n">whos</span>
+<div class="highlight"><pre><span></span><span class="n">whos</span>
 </pre></div>
 
 

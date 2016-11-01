@@ -1,5 +1,61 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Oscar techblog</title><link href="http://oscarlsson.se/" rel="alternate"></link><link href="http://oscarlsson.se/feeds/all.atom.xml" rel="self"></link><id>http://oscarlsson.se/</id><updated>2015-02-07T10:18:00+01:00</updated><entry><title>Introduction to Clustering @ Machine Learning meetup</title><link href="http://oscarlsson.se/clustering-meetup-talk.html" rel="alternate"></link><updated>2015-02-07T10:18:00+01:00</updated><author><name>Oscar Carlsson</name></author><id>tag:oscarlsson.se,2015-02-07:clustering-meetup-talk.html</id><summary type="html">&lt;p&gt;I gave a &lt;em&gt;introduction to clustering&lt;/em&gt; at the Machine Learning meetup-group here in Gothenburg with 35 Machine Learning-enthusiasts, in a wide range of ML-experience, participating.&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Oscar techblog</title><link href="http://oscarlsson.se/" rel="alternate"></link><link href="http://oscarlsson.se/feeds/all.atom.xml" rel="self"></link><id>http://oscarlsson.se/</id><updated>2016-10-25T10:18:00+02:00</updated><entry><title>Insights driven design at Spotify presented at Nordichi '16</title><link href="http://oscarlsson.se/insights-driven-design-nordicchi.html" rel="alternate"></link><published>2016-10-25T10:18:00+02:00</published><updated>2016-10-25T10:18:00+02:00</updated><author><name>Oscar Carlsson</name></author><id>tag:oscarlsson.se,2016-10-25:/insights-driven-design-nordicchi.html</id><summary type="html"></summary><content type="html">&lt;p&gt;Me and our Product Designer BjörnLindberg gave a talk at Nordici '16 at
+Lindholmen, Gothenburg.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;NordiCHI is a biennial conference functioning as the main Nordic forum
+for Human-Computer Interaction (HCI) research.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Also this talk is inspired by Dan McKinleys presentation and my previous Data in development but has got a 
+design perspective that was well received among the HCI researchers.&lt;/p&gt;
+&lt;iframe src="//www.slideshare.net/slideshow/embed_code/key/GEaq96azZp3WE6"
+width="595" height="485" frameborder="0" marginwidth="0" marginheight="0"
+scrolling="no" style="border:1px solid #CCC; border-width:1px;
+margin-bottom:5px; max-width: 100%;" allowfullscreen&gt; &lt;/iframe&gt;
+
+&lt;p&gt;&lt;div
+style="margin-bottom:5px"&gt; &lt;strong&gt; &lt;a
+href="//www.slideshare.net/OscarCarlsson1/insights-driven-design-at-spotify"
+title="Insights driven design at Spotify" target="_blank"&gt;Insights driven
+design at Spotify&lt;/a&gt; &lt;/strong&gt; from &lt;strong&gt;&lt;a target="_blank"
+href="//www.slideshare.net/OscarCarlsson1"&gt;Oscar Carlsson&lt;/a&gt;&lt;/strong&gt;
+&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://www.gp.se/nyheter/sverige/gp-se-hyllades-bland-j%C3%A4ttar-som-spotify-och-volvo-1.3901625"&gt;http://www.gp.se/nyheter/sverige/gp-se-hyllades-bland-j%C3%A4ttar-som-spotify-och-volvo-1.3901625&lt;/a&gt;&lt;/p&gt;</content><category term="PublicSpeaking"></category><category term="ProductDevelopment"></category></entry><entry><title>Data in development @ Spotify presentation Sigma</title><link href="http://oscarlsson.se/data-in-development-sigma.html" rel="alternate"></link><published>2016-05-02T10:18:00+02:00</published><updated>2016-05-02T10:18:00+02:00</updated><author><name>Oscar Carlsson</name></author><id>tag:oscarlsson.se,2016-05-02:/data-in-development-sigma.html</id><summary type="html"></summary><content type="html">&lt;p&gt;I gave a presentation at &lt;a href="http://sigmaitc.se/"&gt;Sigma it consulting&lt;/a&gt; on
+Lindholmen, Gothenburg, about Data in development.&lt;/p&gt;
+&lt;p&gt;The audience consisted of consulting developers and managers working on companies
+such as Ericsson. I wanted to share our story of early validations and
+measuring user impact to validate features.&lt;/p&gt;
+&lt;p&gt;The talk is inspired by Dan McKinleys presentation but reflects what I
+work with and what I spend my time thinking about.&lt;/p&gt;
+&lt;iframe src="//www.slideshare.net/slideshow/embed_code/key/qwkJEQoIqRkMEU"
+width="595" height="485" frameborder="0" marginwidth="0" marginheight="0"
+scrolling="no" style="border:1px solid #CCC; border-width:1px;
+margin-bottom:5px; max-width: 100%;" allowfullscreen&gt; &lt;/iframe&gt;
+
+&lt;p&gt;&lt;div
+style="margin-bottom:5px"&gt; &lt;strong&gt; &lt;a
+href="//www.slideshare.net/OscarCarlsson1/data-in-development-spotify"
+title="Data in development @ Spotify" target="_blank"&gt;Data in development
+@ Spotify&lt;/a&gt; &lt;/strong&gt; from &lt;strong&gt;&lt;a target="_blank"
+href="//www.slideshare.net/OscarCarlsson1"&gt;Oscar Carlsson&lt;/a&gt;&lt;/strong&gt;
+&lt;/div&gt;&lt;/p&gt;</content><category term="PublicSpeaking"></category><category term="ProductDevelopment"></category></entry><entry><title>Machine Learning class at Chalmers</title><link href="http://oscarlsson.se/chalmers-machine-learning-class.html" rel="alternate"></link><published>2015-03-06T10:18:00+01:00</published><updated>2015-03-06T10:18:00+01:00</updated><author><name>Oscar Carlsson</name></author><id>tag:oscarlsson.se,2015-03-06:/chalmers-machine-learning-class.html</id><summary type="html"></summary><content type="html">&lt;p&gt;I gave a 45 min presentation at the Machine Learning class at Chalmers
+titled "Big Data and Machine Learning @ Spotify". &lt;/p&gt;
+&lt;p&gt;Just recently taking the course as a student I tried to connect the theoretical parts presented in
+the course with what the industry does and needs. As data processing and
+cleaning of data is a big part in industry but rightfully skipped in a ML
+class I mentioned that.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://www.slideshare.net/OscarCarlsson1/big-data-and-machine-learning-spotify"&gt;Please have a look at the presentation on slideshare&lt;/a&gt;&lt;/p&gt;
+&lt;iframe src="//www.slideshare.net/slideshow/embed_code/key/Koa6MYPwY0tEu0"
+width="595" height="485" frameborder="0" marginwidth="0" marginheight="0"
+scrolling="no" style="border:1px solid #CCC; border-width:1px;
+margin-bottom:5px; max-width: 100%;" allowfullscreen&gt; &lt;/iframe&gt;
+
+&lt;p&gt;&lt;div
+style="margin-bottom:5px"&gt; &lt;strong&gt; &lt;a
+href="//www.slideshare.net/OscarCarlsson1/big-data-and-machine-learning-spotify"
+title="Big data and machine learning @ Spotify" target="_blank"&gt;Big data
+and machine learning @ Spotify&lt;/a&gt; &lt;/strong&gt; from &lt;strong&gt;&lt;a
+target="_blank" href="//www.slideshare.net/OscarCarlsson1"&gt;Oscar
+Carlsson&lt;/a&gt;&lt;/strong&gt; &lt;/div&gt; &lt;/p&gt;</content><category term="PublicSpeaking"></category><category term="MachineLearning"></category><category term="Clustering"></category></entry><entry><title>Introduction to Clustering @ Machine Learning meetup</title><link href="http://oscarlsson.se/clustering-meetup-talk.html" rel="alternate"></link><published>2015-02-07T10:18:00+01:00</published><updated>2015-02-07T10:18:00+01:00</updated><author><name>Oscar Carlsson</name></author><id>tag:oscarlsson.se,2015-02-07:/clustering-meetup-talk.html</id><summary type="html">&lt;p&gt;I gave a talk on introduction to clustering and feature engineering at the Machine Learning meetup-group in Gothenburg. This post includes the links to presentations and abstract.&lt;/p&gt;</summary><content type="html">&lt;p&gt;I gave a &lt;em&gt;introduction to clustering&lt;/em&gt; at the Machine Learning meetup-group here in Gothenburg with 35 Machine Learning-enthusiasts, in a wide range of ML-experience, participating.&lt;/p&gt;
 &lt;p&gt;We, Spotify, hosted the meetup at our Gothenburg office and I gave two presentations on roughly 30 minutes each. The first one was a theoretical introduction to clustering and feature engineering.
 The purpose of the presentation was to first build an intuition of what clustering is (and what it isn't) by pedagogically explaining the steps from getting the data to the output of the algorithm.&lt;/p&gt;
 &lt;p&gt;And, as I'm really excited about the Machine Learning-community in Python I demoed some data mining in Python. Showing of the use-everyday-libraries such as Numpy, Pandas and Scikit-learn and tie it together with the theoretical methods I had already explained. The clustering examples I did were on Music Lyric data scraped from a lyrics Wikipedia. I showed how we easily could pre-process (clean / vectorize) the data and then plug it into our clustering algorithms. As problem of clustering is unsupervised hence hard to evaluate I (think) managed to show a typical work flow when doing Machine Learning on real-world data. There were tons of obvious preprocessing steps I skipped, but I did so to not add to much to the presentation but to make it easy to follow.&lt;/p&gt;
@@ -14,7 +70,7 @@ The purpose of the presentation was to first build an intuition of what clusteri
 &lt;p&gt;&lt;a href="/python_demo.slides.html"&gt;Presentation/demo 2: Introduction to data (mining) analysis in Python&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Note that the last part, after mentioning iPython, was demoed live in the notebook. Get the notebook at
 &lt;a href="https://github.com/Oscarlsson/meetup-clustering-presentation"&gt;Github repot&lt;/a&gt;
-and try it yourself.&lt;/p&gt;</summary><category term="MachineLearning"></category><category term="Python"></category><category term="Scikit-learn"></category><category term="Clustering"></category><category term="FeatureEngineering"></category></entry><entry><title>Who is doing Machine Learning in Gothenburg?</title><link href="http://oscarlsson.se/machinelearninggothenburg.html" rel="alternate"></link><updated>2015-01-22T16:51:00+01:00</updated><author><name>Oscar Carlsson</name></author><id>tag:oscarlsson.se,2015-01-22:machinelearninggothenburg.html</id><summary type="html">&lt;p&gt;As a master student majoring in Machine Learning I've tried to research what
+and try it yourself.&lt;/p&gt;</content><category term="PublicSpeaking"></category><category term="MachineLearning"></category><category term="Python"></category><category term="Scikit-learn"></category><category term="Clustering"></category><category term="FeatureEngineering"></category></entry><entry><title>Who is doing Machine Learning in Gothenburg?</title><link href="http://oscarlsson.se/machinelearninggothenburg.html" rel="alternate"></link><published>2015-01-22T16:51:00+01:00</published><updated>2015-01-22T16:51:00+01:00</updated><author><name>Oscar Carlsson</name></author><id>tag:oscarlsson.se,2015-01-22:/machinelearninggothenburg.html</id><summary type="html">&lt;p&gt;The machine learning community in Gothenburg is small but existing. This is a summary of how to get in touch with it.&lt;/p&gt;</summary><content type="html">&lt;p&gt;As a master student majoring in Machine Learning I've tried to research what
 companies and institutions in Gothenburg that is involved in Machine Learning/Big data/Data analysis. I was
 looking for future work place and trying to understand how the community in GBG worked.&lt;/p&gt;
 &lt;p&gt;I thought I would share what I've found.
@@ -80,10 +136,10 @@ As for jobs: they where looking for &lt;a href="http://www.wannaremote.com/utvec
 &lt;blockquote&gt;
 &lt;p&gt;Music streaming service&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;Spotify do have an office in Gothenburg, but no team focusing on Machine Learning. The recommender system-team is located in NYC and former EchoNest in Boston. However, I'm working as a Data Engineer (in Gothenburg) doing data analysis on our large dataset from a performance perspective.&lt;/p&gt;</summary><category term="MachineLearning"></category><category term="Gothenburg"></category><category term="Chalmers"></category><category term="DataMining"></category></entry><entry><title>ia32libs on 64-bit Debian Wheezy</title><link href="http://oscarlsson.se/ia32libs.html" rel="alternate"></link><updated>2014-07-02T10:00:00+02:00</updated><author><name>Oscar Carlsson</name></author><id>tag:oscarlsson.se,2014-07-02:ia32libs.html</id><summary type="html">&lt;p&gt;Tried to install a VPN earlier, Forticlient SSL VPN, on my 64-bit Debian wheezy but it turned out to only exist a 32 bit version.&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="c"&gt;# My system:&lt;/span&gt;
-&lt;span class="nv"&gt;$ &lt;/span&gt;uname -a
-&lt;span class="nv"&gt;$ &lt;/span&gt;Linux lad-laptop 3.2.0-4-amd64 &lt;span class="c"&gt;#1 SMP Debian 3.2.57-3+deb7u2 x86_64 GNU/Linux&lt;/span&gt;
+&lt;p&gt;Spotify do have an office in Gothenburg, but no team focusing on Machine Learning. The recommender system-team is located in NYC and former EchoNest in Boston. However, I'm working as a Data Engineer (in Gothenburg) doing data analysis on our large dataset from a performance perspective.&lt;/p&gt;</content><category term="MachineLearning"></category><category term="Gothenburg"></category><category term="Chalmers"></category><category term="DataMining"></category></entry><entry><title>ia32libs on 64-bit Debian Wheezy</title><link href="http://oscarlsson.se/ia32libs.html" rel="alternate"></link><published>2014-07-02T10:00:00+02:00</published><updated>2014-07-02T10:00:00+02:00</updated><author><name>Oscar Carlsson</name></author><id>tag:oscarlsson.se,2014-07-02:/ia32libs.html</id><summary type="html">&lt;p&gt;A short guide on how to get 32-bit programs working on a 64-bit debian wheezy using ia32libs.&lt;/p&gt;</summary><content type="html">&lt;p&gt;Tried to install a VPN earlier, Forticlient SSL VPN, on my 64-bit Debian wheezy but it turned out to only exist a 32 bit version.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c1"&gt;# My system:&lt;/span&gt;
+$ uname -a
+$ Linux lad-laptop 3.2.0-4-amd64 &lt;span class="c1"&gt;#1 SMP Debian 3.2.57-3+deb7u2 x86_64 GNU/Linux&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
@@ -94,27 +150,27 @@ As for jobs: they where looking for &lt;a href="http://www.wannaremote.com/utvec
 &lt;/blockquote&gt;
 &lt;p&gt;So I found a couple of guides but everyone differed in something. I will now retell what worked for me.
 First I had to tell the package management, dpkg, that I wanted &lt;code&gt;i386&lt;/code&gt; libraries (32bit)&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;dpkg --add-architecture i386
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ dpkg --add-architecture i386
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;then change the lines in &lt;code&gt;/etc/apt/source.list&lt;/code&gt; to look like following&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="k"&gt;deb&lt;/span&gt; &lt;span class="sx"&gt;[arch=amd64,i386]&lt;/span&gt; &lt;span class="kp"&gt;http://ftp.se.debian.org/debian/&lt;/span&gt; &lt;span class="kp"&gt;wheezy&lt;/span&gt; &lt;span class="kp"&gt;main&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="k"&gt;deb&lt;/span&gt; &lt;span class="sx"&gt;[arch=amd64,i386]&lt;/span&gt; &lt;span class="kp"&gt;http://ftp.se.debian.org/debian/&lt;/span&gt; &lt;span class="kp"&gt;wheezy&lt;/span&gt; &lt;span class="kp"&gt;main&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;And then update the system with&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;sudo apt-get update &lt;span class="p"&gt;;&lt;/span&gt; sudo apt-get dist-upgrade 
-&lt;span class="nv"&gt;$ &lt;/span&gt;sudo apt-get install &lt;span class="p"&gt;;&lt;/span&gt; sudo apt-get dist-upgrade
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ sudo apt-get update &lt;span class="p"&gt;;&lt;/span&gt; sudo apt-get dist-upgrade 
+$ sudo apt-get install &lt;span class="p"&gt;;&lt;/span&gt; sudo apt-get dist-upgrade
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;and then I was able to install the ia32-lib and get Forticlient working.&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;sudo apt-get install ia32-libs-gtk &lt;span class="o"&gt;&amp;amp;&amp;amp;&lt;/span&gt; sudo apt-get install libgtk2.0-0:i386
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ sudo apt-get install ia32-libs-gtk &lt;span class="o"&gt;&amp;amp;&amp;amp;&lt;/span&gt; sudo apt-get install libgtk2.0-0:i386
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;Note: I have still not gotten any errors by allowing i386 libs on my system but I will update this post if anything bad happens.&lt;/p&gt;</summary><category term="Debian"></category><category term="Notetoself"></category><category term="Unix"></category></entry><entry><title>IPython Notebook on Amazon</title><link href="http://oscarlsson.se/notebookonremote.html" rel="alternate"></link><updated>2014-06-19T18:13:00+02:00</updated><author><name>Oscar Carlsson</name></author><id>tag:oscarlsson.se,2014-06-19:notebookonremote.html</id><summary type="html">&lt;p&gt;I mainly work in Python which has the wonderful tools IPython Notebook
+&lt;p&gt;Note: I have still not gotten any errors by allowing i386 libs on my system but I will update this post if anything bad happens.&lt;/p&gt;</content><category term="Debian"></category><category term="Notetoself"></category><category term="Unix"></category></entry><entry><title>IPython Notebook on Amazon</title><link href="http://oscarlsson.se/notebookonremote.html" rel="alternate"></link><published>2014-06-19T18:13:00+02:00</published><updated>2014-06-19T18:13:00+02:00</updated><author><name>Oscar Carlsson</name></author><id>tag:oscarlsson.se,2014-06-19:/notebookonremote.html</id><summary type="html">&lt;p&gt;Working on IPython Notebook is convenient but not always feasible when working on large datasets. This shows how I used a EC2-instance to allow me to work on larger sets.&lt;/p&gt;</summary><content type="html">&lt;p&gt;I mainly work in Python which has the wonderful tools IPython Notebook
 and IPython QT console, both supporting interactive python and inline
 matplotlib plots. Notebook has the benefit of cell execution and I use it
 when iteratively analysing a dataset and QT console when developing the 
@@ -133,12 +189,12 @@ over night or use a offering with more RAM or CPU than we have locally.&lt;/p&gt
 &lt;/center&gt;
 &lt;/br&gt;
 These steps are really simple. On the Amazon instance, start a IPython Notebook.&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;ipython&lt;/span&gt; &lt;span class="n"&gt;notebook&lt;/span&gt; &lt;span class="n"&gt;port&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="mi"&gt;7777&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;ipython&lt;/span&gt; &lt;span class="n"&gt;notebook&lt;/span&gt; &lt;span class="n"&gt;port&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="mi"&gt;7777&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;On the local machine, set up a ssh-tunnel to the EC2 instance on that port.&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;ssh&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;N&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;f&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;L&lt;/span&gt; &lt;span class="n"&gt;localhost&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="mi"&gt;7777&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="n"&gt;localhost&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="mi"&gt;7777&lt;/span&gt; &lt;span class="n"&gt;amazon&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;ssh&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;N&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;f&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;L&lt;/span&gt; &lt;span class="n"&gt;localhost&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="mi"&gt;7777&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="n"&gt;localhost&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="mi"&gt;7777&lt;/span&gt; &lt;span class="n"&gt;amazon&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
@@ -147,21 +203,21 @@ Navigate to &lt;code&gt;http://localhost:7777&lt;/code&gt; and you will access t
 &lt;h5&gt;tips&lt;/h5&gt;
 &lt;p&gt;To easy pass variables between notebooks use the predefined ipython commande, %store.&lt;/p&gt;
 &lt;p&gt;Save a variable:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="o"&gt;%&lt;/span&gt;&lt;span class="n"&gt;store&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="n"&gt;variable&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="o"&gt;%&lt;/span&gt;&lt;span class="n"&gt;store&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="n"&gt;variable&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;Retrieve a variable:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="o"&gt;%&lt;/span&gt;&lt;span class="n"&gt;store&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;r&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="n"&gt;variable&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="o"&gt;%&lt;/span&gt;&lt;span class="n"&gt;store&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;r&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="n"&gt;variable&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;and to see what variables are currently set, use&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;whos&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;whos&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;There are a couple of things not working properly in Notebook. One of which is that when
 closing the connection from the browser, the output of a running execution gets lost. This is 
 already reported as a bug and apparently hard to fix with the current codebase.
-The solutions is to store intermediate results in a file but this of course means messier code.&lt;/p&gt;</summary><category term="Python"></category><category term="iPythonNotebook"></category><category term="Amazon"></category><category term="Thesis"></category></entry></feed>
+The solutions is to store intermediate results in a file but this of course means messier code.&lt;/p&gt;</content><category term="Python"></category><category term="iPythonNotebook"></category><category term="Amazon"></category><category term="Thesis"></category></entry></feed>

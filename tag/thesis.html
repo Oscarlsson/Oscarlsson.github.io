@@ -43,7 +43,6 @@
     
         </div>
    
-
         </br>
         <div class="social">
             <ul>
@@ -93,12 +92,12 @@ over night or use a offering with more RAM or CPU than we have locally.</p>
 </center>
 </br>
 These steps are really simple. On the Amazon instance, start a IPython Notebook.</p>
-<div class="highlight"><pre><span class="n">ipython</span> <span class="n">notebook</span> <span class="n">port</span><span class="o">=</span><span class="mi">7777</span>
+<div class="highlight"><pre><span></span><span class="n">ipython</span> <span class="n">notebook</span> <span class="n">port</span><span class="o">=</span><span class="mi">7777</span>
 </pre></div>
 
 
 <p>On the local machine, set up a ssh-tunnel to the EC2 instance on that port.</p>
-<div class="highlight"><pre><span class="n">ssh</span> <span class="o">-</span><span class="n">N</span> <span class="o">-</span><span class="n">f</span> <span class="o">-</span><span class="n">L</span> <span class="n">localhost</span><span class="p">:</span><span class="mi">7777</span><span class="p">:</span><span class="n">localhost</span><span class="p">:</span><span class="mi">7777</span> <span class="n">amazon</span>
+<div class="highlight"><pre><span></span><span class="n">ssh</span> <span class="o">-</span><span class="n">N</span> <span class="o">-</span><span class="n">f</span> <span class="o">-</span><span class="n">L</span> <span class="n">localhost</span><span class="p">:</span><span class="mi">7777</span><span class="p">:</span><span class="n">localhost</span><span class="p">:</span><span class="mi">7777</span> <span class="n">amazon</span>
 </pre></div>
 
 
@@ -107,17 +106,17 @@ Navigate to <code>http://localhost:7777</code> and you will access the notebook 
 <h5>tips</h5>
 <p>To easy pass variables between notebooks use the predefined ipython commande, %store.</p>
 <p>Save a variable:</p>
-<div class="highlight"><pre><span class="o">%</span><span class="n">store</span> <span class="o">&lt;</span><span class="n">variable</span><span class="o">&gt;</span>
+<div class="highlight"><pre><span></span><span class="o">%</span><span class="n">store</span> <span class="o">&lt;</span><span class="n">variable</span><span class="o">&gt;</span>
 </pre></div>
 
 
 <p>Retrieve a variable:</p>
-<div class="highlight"><pre><span class="o">%</span><span class="n">store</span> <span class="o">-</span><span class="n">r</span> <span class="o">&lt;</span><span class="n">variable</span><span class="o">&gt;</span>
+<div class="highlight"><pre><span></span><span class="o">%</span><span class="n">store</span> <span class="o">-</span><span class="n">r</span> <span class="o">&lt;</span><span class="n">variable</span><span class="o">&gt;</span>
 </pre></div>
 
 
 <p>and to see what variables are currently set, use</p>
-<div class="highlight"><pre><span class="n">whos</span>
+<div class="highlight"><pre><span></span><span class="n">whos</span>
 </pre></div>
 
 

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-        <title>Oscar techblog - Notetoself</title>
+        <title>Insights driven design at Spotify presented at Nordichi '16</title>
         <meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="shortcut icon" href="http://oscarlsson.se/images/favicon.png"/>
@@ -54,68 +54,67 @@
         
     </section><!-- /#extras -->
 
-        
-        
+<section id="content" >
+    <div class="body">
+      <article>
+        <header>
+          <h1 class="entry-title">
+            <a href="http://oscarlsson.se/insights-driven-design-nordicchi.html" rel="bookmark"
+               title="Permalink to Insights driven design at Spotify presented at Nordichi '16">Insights driven design at Spotify presented at Nordichi '16</a></h1>
 
-    
-            <aside id="featured">
-                <div class="body">
-                    <article>
-                        <h1 class="entry-title"><a href="http://oscarlsson.se/ia32libs.html">ia32libs on 64-bit Debian Wheezy</a></h1>
+        </header>
+
+        <div class="entry-content">
 <div class="post-info">
 	<ul>
         <li class="vcard author">
                  by&nbsp;<a class="url fn" href="http://oscarlsson.se/author/oscar-carlsson.html">Oscar Carlsson</a>
         </li>
-        <li class="published" title="2014-07-02T10:00:00+02:00">
-          on&nbsp;Wed 02 July 2014
+        <li class="published" title="2016-10-25T10:18:00+02:00">
+          on&nbsp;Tue 25 October 2016
         </li>
 
 	</ul>
-<p>Category: <a href="http://oscarlsson.se/tag/debian.html">Debian</a> <a href="http://oscarlsson.se/tag/notetoself.html">Notetoself</a> <a href="http://oscarlsson.se/tag/unix.html">Unix</a> </p>
-</div><!-- /.post-info --><p>Tried to install a VPN earlier, Forticlient SSL VPN, on my 64-bit Debian wheezy but it turned out to only exist a 32 bit version.</p>
-<div class="highlight"><pre><span></span><span class="c1"># My system:</span>
-$ uname -a
-$ Linux lad-laptop 3.2.0-4-amd64 <span class="c1">#1 SMP Debian 3.2.57-3+deb7u2 x86_64 GNU/Linux</span>
-</pre></div>
-
-
-<p>After googling for solutions the standard reply was to install a library which would make 32-bit programs just work: <code>ia32-libs-gtk</code>.</p>
-<p>So i tried this, with no luck:</p>
+<p>Category: <a href="http://oscarlsson.se/tag/publicspeaking.html">PublicSpeaking</a> <a href="http://oscarlsson.se/tag/productdevelopment.html">ProductDevelopment</a> </p>
+</div><!-- /.post-info -->          <p>Me and our Product Designer BjörnLindberg gave a talk at Nordici '16 at
+Lindholmen, Gothenburg.</p>
 <blockquote>
-<p>The following packages have unmet dependencies: <br> ia32-libs : Depends: ia32-libs-i386 but it is not installable <br> E: Unable to correct problems, you have held broken packages.</p>
+<p>NordiCHI is a biennial conference functioning as the main Nordic forum
+for Human-Computer Interaction (HCI) research.</p>
 </blockquote>
-<p>So I found a couple of guides but everyone differed in something. I will now retell what worked for me.
-First I had to tell the package management, dpkg, that I wanted <code>i386</code> libraries (32bit)</p>
-<div class="highlight"><pre><span></span>$ dpkg --add-architecture i386
-</pre></div>
+<p>Also this talk is inspired by Dan McKinleys presentation and my previous Data in development but has got a 
+design perspective that was well received among the HCI researchers.</p>
+<iframe src="//www.slideshare.net/slideshow/embed_code/key/GEaq96azZp3WE6"
+width="595" height="485" frameborder="0" marginwidth="0" marginheight="0"
+scrolling="no" style="border:1px solid #CCC; border-width:1px;
+margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
 
+<p><div
+style="margin-bottom:5px"> <strong> <a
+href="//www.slideshare.net/OscarCarlsson1/insights-driven-design-at-spotify"
+title="Insights driven design at Spotify" target="_blank">Insights driven
+design at Spotify</a> </strong> from <strong><a target="_blank"
+href="//www.slideshare.net/OscarCarlsson1">Oscar Carlsson</a></strong>
+</div></p>
+<p><a href="http://www.gp.se/nyheter/sverige/gp-se-hyllades-bland-j%C3%A4ttar-som-spotify-och-volvo-1.3901625">http://www.gp.se/nyheter/sverige/gp-se-hyllades-bland-j%C3%A4ttar-som-spotify-och-volvo-1.3901625</a></p>
+        </div><!-- /.entry-content -->
+<a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="oscarlsson">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script><br/><br/>
+        <div class="comments">
 
-<p>then change the lines in <code>/etc/apt/source.list</code> to look like following</p>
-<div class="highlight"><pre><span></span><span class="k">deb</span> <span class="sx">[arch=amd64,i386]</span> <span class="kp">http://ftp.se.debian.org/debian/</span> <span class="kp">wheezy</span> <span class="kp">main</span>
-</pre></div>
+          <div id="disqus_thread"></div>
+          <script type="text/javascript">
+            var disqus_identifier = "insights-driven-design-nordicchi.html";
+            (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = 'http://oscarstechblog.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+            })();
+          </script>
+        </div>
 
-
-<p>And then update the system with</p>
-<div class="highlight"><pre><span></span>$ sudo apt-get update <span class="p">;</span> sudo apt-get dist-upgrade 
-$ sudo apt-get install <span class="p">;</span> sudo apt-get dist-upgrade
-</pre></div>
-
-
-<p>and then I was able to install the ia32-lib and get Forticlient working.</p>
-<div class="highlight"><pre><span></span>$ sudo apt-get install ia32-libs-gtk <span class="o">&amp;&amp;</span> sudo apt-get install libgtk2.0-0:i386
-</pre></div>
-
-
-<p>Note: I have still not gotten any errors by allowing i386 libs on my system but I will update this post if anything bad happens.</p>
-                    </article>
-                    <a href="http://oscarlsson.se/ia32libs.html" rel="bookmark" 
-                       title="Permalink to ia32libs on 64-bit Debian Wheezy">comment</a>
-                </div>
-
-            </aside><!-- /#featured -->
-            
-        
+      </article>
+    </div>
+</section>
 	
         <footer id="contentinfo" >
                 <address id="about" class="vcard ">

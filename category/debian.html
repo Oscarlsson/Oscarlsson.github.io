@@ -43,7 +43,6 @@
     
         </div>
    
-
         </br>
         <div class="social">
             <ul>
@@ -75,9 +74,9 @@
 	</ul>
 <p>Category: <a href="http://oscarlsson.se/tag/debian.html">Debian</a> <a href="http://oscarlsson.se/tag/notetoself.html">Notetoself</a> <a href="http://oscarlsson.se/tag/unix.html">Unix</a> </p>
 </div><!-- /.post-info --><p>Tried to install a VPN earlier, Forticlient SSL VPN, on my 64-bit Debian wheezy but it turned out to only exist a 32 bit version.</p>
-<div class="highlight"><pre><span class="c"># My system:</span>
-<span class="nv">$ </span>uname -a
-<span class="nv">$ </span>Linux lad-laptop 3.2.0-4-amd64 <span class="c">#1 SMP Debian 3.2.57-3+deb7u2 x86_64 GNU/Linux</span>
+<div class="highlight"><pre><span></span><span class="c1"># My system:</span>
+$ uname -a
+$ Linux lad-laptop 3.2.0-4-amd64 <span class="c1">#1 SMP Debian 3.2.57-3+deb7u2 x86_64 GNU/Linux</span>
 </pre></div>
 
 
@@ -88,23 +87,23 @@
 </blockquote>
 <p>So I found a couple of guides but everyone differed in something. I will now retell what worked for me.
 First I had to tell the package management, dpkg, that I wanted <code>i386</code> libraries (32bit)</p>
-<div class="highlight"><pre><span class="nv">$ </span>dpkg --add-architecture i386
+<div class="highlight"><pre><span></span>$ dpkg --add-architecture i386
 </pre></div>
 
 
 <p>then change the lines in <code>/etc/apt/source.list</code> to look like following</p>
-<div class="highlight"><pre><span class="k">deb</span> <span class="sx">[arch=amd64,i386]</span> <span class="kp">http://ftp.se.debian.org/debian/</span> <span class="kp">wheezy</span> <span class="kp">main</span>
+<div class="highlight"><pre><span></span><span class="k">deb</span> <span class="sx">[arch=amd64,i386]</span> <span class="kp">http://ftp.se.debian.org/debian/</span> <span class="kp">wheezy</span> <span class="kp">main</span>
 </pre></div>
 
 
 <p>And then update the system with</p>
-<div class="highlight"><pre><span class="nv">$ </span>sudo apt-get update <span class="p">;</span> sudo apt-get dist-upgrade 
-<span class="nv">$ </span>sudo apt-get install <span class="p">;</span> sudo apt-get dist-upgrade
+<div class="highlight"><pre><span></span>$ sudo apt-get update <span class="p">;</span> sudo apt-get dist-upgrade 
+$ sudo apt-get install <span class="p">;</span> sudo apt-get dist-upgrade
 </pre></div>
 
 
 <p>and then I was able to install the ia32-lib and get Forticlient working.</p>
-<div class="highlight"><pre><span class="nv">$ </span>sudo apt-get install ia32-libs-gtk <span class="o">&amp;&amp;</span> sudo apt-get install libgtk2.0-0:i386
+<div class="highlight"><pre><span></span>$ sudo apt-get install ia32-libs-gtk <span class="o">&amp;&amp;</span> sudo apt-get install libgtk2.0-0:i386
 </pre></div>
 
 
