@@ -5,28 +5,28 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>http://oscarlsson.se/</loc>
-<lastmod>2016-11-01T21:59:23-00:00</lastmod>
+<lastmod>2016-11-10T16:57:50-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>http://oscarlsson.se/archives.html</loc>
-<lastmod>2016-11-01T21:59:23-00:00</lastmod>
+<lastmod>2016-11-10T16:57:50-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>http://oscarlsson.se/tags.html</loc>
-<lastmod>2016-11-01T21:59:23-00:00</lastmod>
+<lastmod>2016-11-10T16:57:50-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>http://oscarlsson.se/categories.html</loc>
-<lastmod>2016-11-01T21:59:23-00:00</lastmod>
+<lastmod>2016-11-10T16:57:50-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -34,6 +34,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>http://oscarlsson.se/insights-driven-design-nordicchi.html</loc>
 <lastmod>2016-10-25T10:18:00+02:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>http://oscarlsson.se/mine-out-west.html</loc>
+<lastmod>2016-08-11T10:00:00+02:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
@@ -90,6 +97,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>http://oscarlsson.se/category/ipython.html</loc>
 <lastmod>2014-06-19T18:13:00+00:09</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>http://oscarlsson.se/category/misc.html</loc>
+<lastmod>2016-08-11T10:00:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -195,6 +209,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>http://oscarlsson.se/tag/publicspeaking.html</loc>
 <lastmod>2016-10-25T10:18:00+00:09</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>http://oscarlsson.se/tag/hacking.html</loc>
+<lastmod>2016-08-11T10:00:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>

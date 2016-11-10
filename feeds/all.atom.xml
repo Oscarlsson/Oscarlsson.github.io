@@ -19,7 +19,17 @@ title="Insights driven design at Spotify" target="_blank"&gt;Insights driven
 design at Spotify&lt;/a&gt; &lt;/strong&gt; from &lt;strong&gt;&lt;a target="_blank"
 href="//www.slideshare.net/OscarCarlsson1"&gt;Oscar Carlsson&lt;/a&gt;&lt;/strong&gt;
 &lt;/div&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://www.gp.se/nyheter/sverige/gp-se-hyllades-bland-j%C3%A4ttar-som-spotify-och-volvo-1.3901625"&gt;http://www.gp.se/nyheter/sverige/gp-se-hyllades-bland-j%C3%A4ttar-som-spotify-och-volvo-1.3901625&lt;/a&gt;&lt;/p&gt;</content><category term="PublicSpeaking"></category><category term="ProductDevelopment"></category></entry><entry><title>Data in development @ Spotify presentation Sigma</title><link href="http://oscarlsson.se/data-in-development-sigma.html" rel="alternate"></link><published>2016-05-02T10:18:00+02:00</published><updated>2016-05-02T10:18:00+02:00</updated><author><name>Oscar Carlsson</name></author><id>tag:oscarlsson.se,2016-05-02:/data-in-development-sigma.html</id><summary type="html"></summary><content type="html">&lt;p&gt;I gave a presentation at &lt;a href="http://sigmaitc.se/"&gt;Sigma it consulting&lt;/a&gt; on
+&lt;p&gt;&lt;a href="http://www.gp.se/nyheter/sverige/gp-se-hyllades-bland-j%C3%A4ttar-som-spotify-och-volvo-1.3901625"&gt;http://www.gp.se/nyheter/sverige/gp-se-hyllades-bland-j%C3%A4ttar-som-spotify-och-volvo-1.3901625&lt;/a&gt;&lt;/p&gt;</content><category term="PublicSpeaking"></category><category term="ProductDevelopment"></category></entry><entry><title>Mine Out West at Hack Out West 2016</title><link href="http://oscarlsson.se/mine-out-west.html" rel="alternate"></link><published>2016-08-11T10:00:00+02:00</published><updated>2016-08-11T10:00:00+02:00</updated><author><name>Oscar Carlsson</name></author><id>tag:oscarlsson.se,2016-08-11:/mine-out-west.html</id><summary type="html"></summary><content type="html">&lt;p&gt;As part of a hackathon called Hack Out West we built the Way Out West 2016
+festival into minecraft.&lt;/p&gt;
+&lt;p&gt;We generated the landscape from maps, built the stage areas and
+implemented so that the artists/bands spawned at the right stage when they
+were going on stage. All great fun. Watch the video below to check it out
+:)&lt;/p&gt;
+&lt;p&gt;&lt;img src="../images/mineoutwest.jpg" alt="Mine out west" style="width: 500px;" &gt;
+&lt;img src="../images/hackoutwest.png" alt="Hack out west" style="width: 100px;" &gt; &lt;br&gt;&lt;/p&gt;
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/MVv6T7Z6TZc" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;&lt;a href="https://github.com/hackoutwest2016/MineOutWest"&gt;All the code can be found on GitHub here&lt;/a&gt;&lt;/p&gt;</content><category term="hacking"></category></entry><entry><title>Data in development @ Spotify presentation Sigma</title><link href="http://oscarlsson.se/data-in-development-sigma.html" rel="alternate"></link><published>2016-05-02T10:18:00+02:00</published><updated>2016-05-02T10:18:00+02:00</updated><author><name>Oscar Carlsson</name></author><id>tag:oscarlsson.se,2016-05-02:/data-in-development-sigma.html</id><summary type="html"></summary><content type="html">&lt;p&gt;I gave a presentation at &lt;a href="http://sigmaitc.se/"&gt;Sigma it consulting&lt;/a&gt; on
 Lindholmen, Gothenburg, about Data in development.&lt;/p&gt;
 &lt;p&gt;The audience consisted of consulting developers and managers working on companies
 such as Ericsson. I wanted to share our story of early validations and
